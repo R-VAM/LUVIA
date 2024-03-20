@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: 863a0d84bc7579546beadf6dfac17577
+timeCreated: 1507540417
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: "\u4E0B\u4E18\u8111"
+    100004: "\u4E2D\u80BE\u7BA1"
+    100006: "\u4E2D\u80BE\u7BA1 1"
+    100008: "\u55C5\u53F6"
+    100010: "\u55C5\u53F6 1"
+    100012: "\u5927\u8111"
+    100014: "\u5C0F\u7BA1"
+    100016: "\u5C0F\u7BA1 1"
+    100018: "\u5C0F\u8111"
+    100020: "\u5DE9\u819C"
+    100022: "\u5FC3\u810F"
+    100024: "\u6F0F\u6597\u7BA1"
+    100026: "\u777E\u4E38"
+    100028: "\u777E\u4E38 1"
+    100030: "\u809D"
+    100032: "\u809D 1"
+    100034: "\u809D 2"
+    100036: "\u80A0\u80C3"
+    100038: "\u80BA"
+    100040: "\u80BA 1"
+    100042: "\u80BA\u9759\u8109"
+    100044: "\u80BE"
+    100046: "\u80BE 1"
+    100048: "\u80C6\u56CA"
+    100050: "\u80F0\u817A"
+    100052: "\u8102\u80AA"
+    100054: "\u8102\u80AA 1"
+    100056: "\u810A\u9AD3"
+    100058: "\u8179\u9759\u8109"
+    100060: "\u8180\u80F1"
+    100062: "\u89C6\u53F6"
+    100064: "\u89C6\u53F6 1"
+    100066: "\u95F4\u8111"
+    100068: "\u9759\u8109"
+    100070: "\u9759\u8109 1"
+    400000: //RootNode
+    400002: "\u4E0B\u4E18\u8111"
+    400004: "\u4E2D\u80BE\u7BA1"
+    400006: "\u4E2D\u80BE\u7BA1 1"
+    400008: "\u55C5\u53F6"
+    400010: "\u55C5\u53F6 1"
+    400012: "\u5927\u8111"
+    400014: "\u5C0F\u7BA1"
+    400016: "\u5C0F\u7BA1 1"
+    400018: "\u5C0F\u8111"
+    400020: "\u5DE9\u819C"
+    400022: "\u5FC3\u810F"
+    400024: "\u6F0F\u6597\u7BA1"
+    400026: "\u777E\u4E38"
+    400028: "\u777E\u4E38 1"
+    400030: "\u809D"
+    400032: "\u809D 1"
+    400034: "\u809D 2"
+    400036: "\u80A0\u80C3"
+    400038: "\u80BA"
+    400040: "\u80BA 1"
+    400042: "\u80BA\u9759\u8109"
+    400044: "\u80BE"
+    400046: "\u80BE 1"
+    400048: "\u80C6\u56CA"
+    400050: "\u80F0\u817A"
+    400052: "\u8102\u80AA"
+    400054: "\u8102\u80AA 1"
+    400056: "\u810A\u9AD3"
+    400058: "\u8179\u9759\u8109"
+    400060: "\u8180\u80F1"
+    400062: "\u89C6\u53F6"
+    400064: "\u89C6\u53F6 1"
+    400066: "\u95F4\u8111"
+    400068: "\u9759\u8109"
+    400070: "\u9759\u8109 1"
+    2300000: "\u4E0B\u4E18\u8111"
+    2300002: "\u4E2D\u80BE\u7BA1"
+    2300004: "\u4E2D\u80BE\u7BA1 1"
+    2300006: "\u55C5\u53F6"
+    2300008: "\u55C5\u53F6 1"
+    2300010: "\u5927\u8111"
+    2300012: "\u5C0F\u7BA1"
+    2300014: "\u5C0F\u7BA1 1"
+    2300016: "\u5C0F\u8111"
+    2300018: "\u5DE9\u819C"
+    2300020: "\u5FC3\u810F"
+    2300022: "\u6F0F\u6597\u7BA1"
+    2300024: "\u777E\u4E38"
+    2300026: "\u777E\u4E38 1"
+    2300028: "\u809D"
+    2300030: "\u809D 1"
+    2300032: "\u809D 2"
+    2300034: "\u80A0\u80C3"
+    2300036: "\u80BA"
+    2300038: "\u80BA 1"
+    2300040: "\u80BA\u9759\u8109"
+    2300042: "\u80BE"
+    2300044: "\u80BE 1"
+    2300046: "\u80C6\u56CA"
+    2300048: "\u80F0\u817A"
+    2300050: "\u8102\u80AA"
+    2300052: "\u8102\u80AA 1"
+    2300054: "\u810A\u9AD3"
+    2300056: "\u8179\u9759\u8109"
+    2300058: "\u8180\u80F1"
+    2300060: "\u89C6\u53F6"
+    2300062: "\u89C6\u53F6 1"
+    2300064: "\u95F4\u8111"
+    2300066: "\u9759\u8109"
+    2300068: "\u9759\u8109 1"
+    3300000: "\u4E0B\u4E18\u8111"
+    3300002: "\u4E2D\u80BE\u7BA1"
+    3300004: "\u4E2D\u80BE\u7BA1 1"
+    3300006: "\u55C5\u53F6"
+    3300008: "\u55C5\u53F6 1"
+    3300010: "\u5927\u8111"
+    3300012: "\u5C0F\u7BA1"
+    3300014: "\u5C0F\u7BA1 1"
+    3300016: "\u5C0F\u8111"
+    3300018: "\u5DE9\u819C"
+    3300020: "\u5FC3\u810F"
+    3300022: "\u6F0F\u6597\u7BA1"
+    3300024: "\u777E\u4E38"
+    3300026: "\u777E\u4E38 1"
+    3300028: "\u809D"
+    3300030: "\u809D 1"
+    3300032: "\u809D 2"
+    3300034: "\u80A0\u80C3"
+    3300036: "\u80BA"
+    3300038: "\u80BA 1"
+    3300040: "\u80BA\u9759\u8109"
+    3300042: "\u80BE"
+    3300044: "\u80BE 1"
+    3300046: "\u80C6\u56CA"
+    3300048: "\u80F0\u817A"
+    3300050: "\u8102\u80AA"
+    3300052: "\u8102\u80AA 1"
+    3300054: "\u810A\u9AD3"
+    3300056: "\u8179\u9759\u8109"
+    3300058: "\u8180\u80F1"
+    3300060: "\u89C6\u53F6"
+    3300062: "\u89C6\u53F6 1"
+    3300064: "\u95F4\u8111"
+    3300066: "\u9759\u8109"
+    3300068: "\u9759\u8109 1"
+    4300000: "\u5DE9\u819C"
+    4300002: "\u5927\u8111"
+    4300004: "\u55C5\u53F6"
+    4300006: "\u55C5\u53F6"
+    4300008: "\u89C6\u53F6"
+    4300010: "\u89C6\u53F6"
+    4300012: "\u95F4\u8111"
+    4300014: "\u6F0F\u6597\u7BA1"
+    4300016: "\u4E0B\u4E18\u8111"
+    4300018: "\u5C0F\u8111"
+    4300020: "\u810A\u9AD3"
+    4300022: "\u80BE"
+    4300024: "\u80BE"
+    4300026: "\u8102\u80AA"
+    4300028: "\u8102\u80AA"
+    4300030: "\u9759\u8109"
+    4300032: "\u80A0\u80C3"
+    4300034: "\u8180\u80F1"
+    4300036: "\u9759\u8109"
+    4300038: "\u80BA"
+    4300040: "\u80BA"
+    4300042: "\u809D"
+    4300044: "\u809D"
+    4300046: "\u809D"
+    4300048: "\u80C6\u56CA"
+    4300050: "\u80F0\u817A"
+    4300052: "\u8179\u9759\u8109"
+    4300054: "\u5FC3\u810F"
+    4300056: "\u80BA\u9759\u8109"
+    4300058: "\u777E\u4E38"
+    4300060: "\u777E\u4E38"
+    4300062: "\u4E2D\u80BE\u7BA1"
+    4300064: "\u4E2D\u80BE\u7BA1"
+    4300066: "\u5C0F\u7BA1"
+    4300068: "\u5C0F\u7BA1"
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #280'
+    second: {fileID: 2100000, guid: 20aff9f73adc9364cbff5b4ed3758806, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: default
+    second: {fileID: 2100000, guid: d369e694684384d43add70eccafd2dc2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
