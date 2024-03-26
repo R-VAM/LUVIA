@@ -136,6 +136,8 @@ GameObject:
   - component: {fileID: 86178427}
   - component: {fileID: 86178426}
   - component: {fileID: 86178425}
+  - component: {fileID: 86178429}
+  - component: {fileID: 86178430}
   m_Layer: 0
   m_Name: ToolsMenu
   m_TagString: Untagged
@@ -189,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cd9780be7e512049b4d33d5c9d0ac92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeState: {fileID: 86178428}
+  _activeState: {fileID: 86178430}
 --- !u!114 &86178427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +221,46 @@ MonoBehaviour:
   _fingerFeatureStateProvider: {fileID: 1775186464}
   _shapes:
   - {fileID: 11400000, guid: 30f9368f7077aa342868834cdea6e865, type: 2}
+--- !u!114 &86178429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86178423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f9440d09721c849864899e8986e219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 86178427}
+  _transformFeatureStateProvider: {fileID: 1775186463}
+  _transformFeatureConfigs:
+    _values:
+    - _mode: 0
+      _feature: 3
+      _state: 9
+  _transformConfig:
+    PositionOffset: {x: 0, y: 0, z: 0}
+    RotationOffset: {x: 0, y: 0, z: 0}
+    UpVectorType: 2
+    FeatureThresholds: {fileID: 11400000, guid: 039cf5a7424e1e046b79287e9375cf09, type: 2}
+--- !u!114 &86178430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86178423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aebd5da9a8bd22243b407f1927f4965b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeStates:
+  - {fileID: 86178428}
+  - {fileID: 86178429}
+  _logicOperator: 0
 --- !u!1001 &144321788
 PrefabInstance:
   m_ObjectHideFlags: 0
