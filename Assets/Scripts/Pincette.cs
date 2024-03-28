@@ -43,35 +43,18 @@ public class Pincette : MonoBehaviour
         }*/
 
         // Grabbed 상태일 때
-        if (state == State.Grabbed)
-        {
-            // Pinch Grab 상태일 때
-            if (handGrabInteractorR.CurrentGrabType() == GrabTypeFlags.Pinch)
-            {
-                setBlack();
-            }
-            else
-            {
-                setRed();
-            }
-        }
-
-        // 손에 잡히지 않은 상태일 때
-        else
+        if (handGrabInteractorR.IsGrabbing)
         {
             setBlack();
-        }
-
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        // 손에 잡히지 않은 상태에서 Player(Layer 7)와 충돌하면 Grabbed 상태로 전환
-        if (state == State.Released && collision.gameObject.layer == 7)
-        {
             state = State.Grabbed;
-            transform.position = handTransform.position;
         }
+        // Released 상태일 때
+        else
+        {
+            setRed();
+            state = State.Released;
+        }
+
     }
 
 
