@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class ToolsMenu : MonoBehaviour
 {
-    public GameObject cam;
-    public Transform rightHand;
-
-
-    private Transform pos;
-
     void Start()
     {
         
@@ -20,12 +14,13 @@ public class ToolsMenu : MonoBehaviour
         
     }
 
+    // 손 동작을 인식해서 Tool메뉴 OPEN
     public void selectedByHandPose()
     {
         gameObject.SetActive(true);
-        gameObject.transform.position = rightHand.position;
     }
 
+    // Tool메뉴 CLOSE
     public void unselectedByHandPose()
     {
         gameObject.SetActive(false);
