@@ -80,4 +80,14 @@ public class HaebuChim : OneGrabFreeTransformer, ITransformer
             meshRenderer.material.color = Color.white;
         }
     }
+
+    // 해부침을 손으로 잡으면 collider가 작동하지 않아서 trigger로 일단 처리함
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Organ"))
+        {
+            OrganDescription description = other.gameObject.GetComponent<OrganDescription>();
+            description.setActiveUI();
+        }
+    }
 }
