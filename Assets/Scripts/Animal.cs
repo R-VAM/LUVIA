@@ -40,6 +40,7 @@ public class Animal : OneGrabFreeTransformer, ITransformer
     public new void BeginTransform()
     {
         isGrabbed = true;
+        state = FrogState.Grabbed;
 
         base.BeginTransform();
         onobjectGrabbed?.Invoke(gameObject);
@@ -80,13 +81,14 @@ public class Animal : OneGrabFreeTransformer, ITransformer
     void detectGrab()
     {
 
-        if (isGrabbed)
+        if (isAnesed)
         {
             
         }
         else
         {
-            
+            state = FrogState.Idle;
+            animator.SetBool("isGrabbed", isGrabbed);
         }
     }
 
@@ -95,15 +97,20 @@ public class Animal : OneGrabFreeTransformer, ITransformer
         if (state == FrogState.Idle)
         {
             // Idle Action
+            
         }
         else if (state == FrogState.Grabbed)
         {
             // 잡혔을 때 Action
+            animator.SetBool("isGrabbed", isGrabbed);
             frogGrabbed();
         }
         else if (state == FrogState.Anesthesia)
         {
             // 마취됐을 때 Action
+
+            // 애니메이터 비활성화
+            animator.enabled = false;
         }
     }
 
@@ -115,8 +122,9 @@ public class Animal : OneGrabFreeTransformer, ITransformer
     public void doAnes()
     {
         state = FrogState.Anesthesia;
+        isAnesed = true;
 
-        // 마취 됐는지 확인하기 위해 디버깅 용도로 크기 키우기
-        gameObject.transform.localScale += new Vector3(2f, 2f, 2f);
+        // 마취 됐는지 확인하기 위해 디버깅 용도로 크기 키우기 - 정상 작동
+        //gameObject.transform.localScale += new Vector3(2f, 2f, 2f);
     }
 }
