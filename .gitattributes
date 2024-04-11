@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83b80c55b2ec642636384813d505f50d75dbf01bfe7df8481c850ba227d30728
-size 208
+# Auto detect text files and perform LF normalization
+* text=auto
