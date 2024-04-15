@@ -16,6 +16,7 @@ public class Jusagi : OneGrabFreeTransformer, ITransformer
     public event ObjectReleased onObjectReleased;
 
     public bool isGrabbed;
+    public float collisionDuration;
 
     void Start()
     {
@@ -76,7 +77,9 @@ public class Jusagi : OneGrabFreeTransformer, ITransformer
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+
+    /*private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Animal"))
         {
@@ -86,6 +89,20 @@ public class Jusagi : OneGrabFreeTransformer, ITransformer
             if(cshAnimal.isGrabbed)
             {
                 // 마취 상태로 변경하는 함수 호출
+                cshAnimal.doAnes();
+            }
+        }
+    }*/
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Animal"))
+        {
+            collisionDuration += Time.deltaTime;
+            
+            if(collisionDuration > 3f)
+            {
+                Animal cshAnimal = collision.gameObject.GetComponent<Animal>();
                 cshAnimal.doAnes();
             }
         }
