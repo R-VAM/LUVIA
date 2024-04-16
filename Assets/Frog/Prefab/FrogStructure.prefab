@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 33274421645476098}
   - component: {fileID: 23618375726359924}
   m_Layer: 0
-  m_Name: "\u777E\u4E38"
+  m_Name: testicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1184,7 +1184,7 @@ GameObject:
   - component: {fileID: 33014376871315132}
   - component: {fileID: 23818013927202608}
   m_Layer: 0
-  m_Name: "\u5C0F\u7BA1"
+  m_Name: Vas efferens
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1433,7 +1433,7 @@ GameObject:
   - component: {fileID: 33601187055819560}
   - component: {fileID: 23312976517062146}
   m_Layer: 0
-  m_Name: "\u80BE 1"
+  m_Name: kidneys 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2927,7 +2927,7 @@ GameObject:
   - component: {fileID: 33465843789598228}
   - component: {fileID: 23604635784516110}
   m_Layer: 0
-  m_Name: "\u80A0\u80C3"
+  m_Name: intestine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3010,7 +3010,7 @@ GameObject:
   - component: {fileID: 33117761299779070}
   - component: {fileID: 23778521602274858}
   m_Layer: 0
-  m_Name: "\u8102\u80AA"
+  m_Name: fat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3259,7 +3259,7 @@ GameObject:
   - component: {fileID: 33656717411075026}
   - component: {fileID: 23381726856655166}
   m_Layer: 0
-  m_Name: "\u5DE9\u819C"
+  m_Name: SCLERA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3757,7 +3757,7 @@ GameObject:
   - component: {fileID: 33393218030868652}
   - component: {fileID: 23967765643294600}
   m_Layer: 0
-  m_Name: "\u80BA 1"
+  m_Name: lung 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4836,7 +4836,7 @@ GameObject:
   - component: {fileID: 33680986011330292}
   - component: {fileID: 23272742362115340}
   m_Layer: 0
-  m_Name: "\u5C0F\u7BA1 1"
+  m_Name: Vas efferens 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5334,7 +5334,7 @@ GameObject:
   - component: {fileID: 33520468522370514}
   - component: {fileID: 23867950713213908}
   m_Layer: 0
-  m_Name: "\u4E0B\u4E18\u8111"
+  m_Name: hypothalamus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5749,7 +5749,7 @@ GameObject:
   - component: {fileID: 33326754218253774}
   - component: {fileID: 23071079108099284}
   m_Layer: 0
-  m_Name: "\u8180\u80F1"
+  m_Name: bladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6081,7 +6081,7 @@ GameObject:
   - component: {fileID: 33774646286734826}
   - component: {fileID: 23017700054258298}
   m_Layer: 0
-  m_Name: "\u8179\u9759\u8109"
+  m_Name: abdominal vein
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6496,7 +6496,7 @@ GameObject:
   - component: {fileID: 33998005540865958}
   - component: {fileID: 23577172905679602}
   m_Layer: 0
-  m_Name: "\u809D 2"
+  m_Name: liver 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7172,7 +7172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299010584475264}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8139,7 +8139,7 @@ GameObject:
   - component: {fileID: 33517436197009632}
   - component: {fileID: 23620908089758634}
   m_Layer: 0
-  m_Name: "\u9759\u8109 1"
+  m_Name: vein 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8471,7 +8471,7 @@ GameObject:
   - component: {fileID: 33962805809201540}
   - component: {fileID: 23396175985640594}
   m_Layer: 0
-  m_Name: "\u5FC3\u810F"
+  m_Name: heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8969,7 +8969,7 @@ GameObject:
   - component: {fileID: 33034025289550396}
   - component: {fileID: 23682640097674064}
   m_Layer: 0
-  m_Name: "\u809D"
+  m_Name: liver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9301,7 +9301,7 @@ GameObject:
   - component: {fileID: 33939883716555878}
   - component: {fileID: 23149160728397358}
   m_Layer: 0
-  m_Name: "\u809D 1"
+  m_Name: liver 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9716,7 +9716,7 @@ GameObject:
   - component: {fileID: 33690617480516608}
   - component: {fileID: 23393444654268482}
   m_Layer: 0
-  m_Name: "\u8102\u80AA 1"
+  m_Name: fat 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10878,7 +10878,7 @@ GameObject:
   - component: {fileID: 33468587457233456}
   - component: {fileID: 23277163102393742}
   m_Layer: 0
-  m_Name: "\u4E2D\u80BE\u7BA1"
+  m_Name: mesonephric duct
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13491,7 +13491,7 @@ GameObject:
   - component: {fileID: 33229012752557282}
   - component: {fileID: 23580104257810490}
   m_Layer: 0
-  m_Name: "\u5C0F\u8111"
+  m_Name: cerebellum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13989,7 +13989,7 @@ GameObject:
   - component: {fileID: 33906748180693342}
   - component: {fileID: 23564733945697938}
   m_Layer: 0
-  m_Name: "\u89C6\u53F6 1"
+  m_Name: optic nerve 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14985,7 +14985,7 @@ GameObject:
   - component: {fileID: 33960869290341446}
   - component: {fileID: 23618364541809858}
   m_Layer: 0
-  m_Name: "\u9759\u8109"
+  m_Name: vein
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15981,7 +15981,7 @@ GameObject:
   - component: {fileID: 33438573277704410}
   - component: {fileID: 23342646287008762}
   m_Layer: 0
-  m_Name: "\u80BA\u9759\u8109"
+  m_Name: Pulmonary vein
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16147,7 +16147,7 @@ GameObject:
   - component: {fileID: 33745484741415664}
   - component: {fileID: 23025532546111628}
   m_Layer: 0
-  m_Name: "\u55C5\u53F6 1"
+  m_Name: olfactory lobe 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16728,7 +16728,7 @@ GameObject:
   - component: {fileID: 33248853495256412}
   - component: {fileID: 23829551026126830}
   m_Layer: 0
-  m_Name: "\u89C6\u53F6"
+  m_Name: optic nerve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17890,7 +17890,7 @@ GameObject:
   - component: {fileID: 33775754688093664}
   - component: {fileID: 23181455566453452}
   m_Layer: 0
-  m_Name: "\u4E2D\u80BE\u7BA1 1"
+  m_Name: mesonephric duct 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18720,7 +18720,7 @@ GameObject:
   - component: {fileID: 33182121399477576}
   - component: {fileID: 23895230325491590}
   m_Layer: 0
-  m_Name: "\u80BA"
+  m_Name: lung
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19550,7 +19550,7 @@ GameObject:
   - component: {fileID: 33378456806708420}
   - component: {fileID: 23878062268789474}
   m_Layer: 0
-  m_Name: "\u80BE"
+  m_Name: kidneys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20463,7 +20463,7 @@ GameObject:
   - component: {fileID: 33795850504951352}
   - component: {fileID: 23009817165114878}
   m_Layer: 0
-  m_Name: "\u777E\u4E38 1"
+  m_Name: testicle 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20629,7 +20629,7 @@ GameObject:
   - component: {fileID: 33109973266128682}
   - component: {fileID: 23326383309365100}
   m_Layer: 0
-  m_Name: "\u5927\u8111"
+  m_Name: brain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20878,7 +20878,7 @@ GameObject:
   - component: {fileID: 33469797160398914}
   - component: {fileID: 23661570431242088}
   m_Layer: 0
-  m_Name: "\u810A\u9AD3"
+  m_Name: spinal cord
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21210,7 +21210,7 @@ GameObject:
   - component: {fileID: 33384668402825784}
   - component: {fileID: 23612972786907288}
   m_Layer: 0
-  m_Name: "\u55C5\u53F6"
+  m_Name: olfactory lobe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21459,7 +21459,7 @@ GameObject:
   - component: {fileID: 33005159807096118}
   - component: {fileID: 23222191461643268}
   m_Layer: 0
-  m_Name: "\u95F4\u8111"
+  m_Name: interbrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21708,7 +21708,7 @@ GameObject:
   - component: {fileID: 33679756319302794}
   - component: {fileID: 23884041260436462}
   m_Layer: 0
-  m_Name: "\u80C6\u56CA"
+  m_Name: gallbladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22240,7 +22240,7 @@ GameObject:
   - component: {fileID: 33636501092610810}
   - component: {fileID: 23140792911908360}
   m_Layer: 0
-  m_Name: "\u80F0\u817A"
+  m_Name: pancreas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
