@@ -18,11 +18,13 @@ public class OrganDescription : MonoBehaviour
 
     void Update()
     {
-        description.gameObject.SetActive(isActive);
+        //description.gameObject.SetActive(isActive);
     }
 
     public void setActiveUI()
     {
         isActive = !isActive;
+        description.gameObject.SetActive(isActive);
+
     }
 }
