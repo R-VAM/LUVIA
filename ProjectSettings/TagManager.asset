@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Organ
   - Animal
+  - Fix
   layers:
   - Default
   - TransparentFX
