@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1134653729746972592}
   m_Layer: 0
   m_Name: Pincette
-  m_TagString: Untagged
+  m_TagString: Tools
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

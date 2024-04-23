@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Johnny_TestScene.unity
     guid: 58d62a58712e28047a1127d84ca474ca
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LabScene.unity
     guid: 0dfa13525f87f744abbc834f7198c7ae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Dasol_Test.unity
     guid: a1cd67bce46cbc749a44dcc33f2e6126
   m_configObjects:
