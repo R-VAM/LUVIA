@@ -2893,6 +2893,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &744662057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.32904986
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.496
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.502922
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585580330330796201, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591186634603553291, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
+      propertyPath: m_Name
+      value: AnesthetizedFrog Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf8bbfcb1fcfe30489f823e181900b32, type: 3}
 --- !u!1 &779226859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3400,7 +3457,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tools: {fileID: 5132450553066835277, guid: 2efb3b27c5edcbb478c9db8823f92fa3, type: 3}
-  summonPos: {fileID: 548286845}
 --- !u!65 &850564044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4140,7 +4196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tools: {fileID: 1183070151533216850, guid: 3e17402bba5b2f243bc4def1d33d6fa5, type: 3}
-  summonPos: {fileID: 548286845}
 --- !u!65 &1005155823
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6079,6 +6134,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: {fileID: 122172875}
+  heartPanel: {fileID: 0}
+  liverPanel: {fileID: 0}
+  scleraPanel: {fileID: 0}
+  intestinePanel: {fileID: 0}
+  lungPanel: {fileID: 0}
+  kidneyPanel: {fileID: 0}
+  bladderPanel: {fileID: 0}
   isActive: 0
 --- !u!65 &1657690793
 BoxCollider:
@@ -6982,6 +7044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb93dc788ff73d14d8f6b84be5367107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  summonPos: {fileID: 0}
 --- !u!4 &1922085677 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4734861364126264, guid: d2c0e1fbe8ae17c48aa62ff53bb6dce8, type: 3}
@@ -7215,7 +7278,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tools: {fileID: 6225228999187372386, guid: 6b9dd2bc13ae23641b569610886219fe, type: 3}
-  summonPos: {fileID: 548286845}
 --- !u!65 &1970331767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7803,7 +7865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tools: {fileID: 1963783808103386698, guid: e0e5c238d47ed5543bbe1cb341578619, type: 3}
-  summonPos: {fileID: 548286845}
 --- !u!65 &2068429565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8257,7 +8318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tools: {fileID: 414066699511780555, guid: a916885b93455434c8496dc8e949970e, type: 3}
-  summonPos: {fileID: 548286845}
 --- !u!65 &2137212762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8356,3 +8416,4 @@ SceneRoots:
   - {fileID: 1657690796}
   - {fileID: 676460847}
   - {fileID: 2040463989}
+  - {fileID: 744662057}
