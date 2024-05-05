@@ -595,6 +595,11 @@ namespace Oculus.Interaction.HandGrab
             VelocityCalculator = velocityCalculator;
         }
 
+        public object GetGrabbedObject()
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
     }
 }
