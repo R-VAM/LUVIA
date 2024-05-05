@@ -8,68 +8,95 @@ using Oculus.Interaction.Grab;
 
 public class Pincette : MonoBehaviour
 {
-    public enum State // 핀셋의 상태 {손에 잡힌 상태, 손에 잡히지 않은 상태}
+/*    public enum State // 핀셋의 상태 {손에 잡힌 상태, 손에 잡히지 않은 상태}
     {
         Released,
         Grabbed
-    }
+    }*/
 
-    public State state;
+    //public State state;
 
     public HandGrabInteractable handInteract;
-    public HandGrabInteractor handGrabInteractorR;
+    public HandGrabInteractor handGrabInteractorL;
 
     public Transform handTransform; // 핀셋을 잡았을 때 손에 위치할 Transform
 
-    MeshRenderer meshRenderer;
+    public GameObject pincette;
+    public GameObject GrabbedPincette;
 
-    private void Awake()
-    {
-       meshRenderer = GetComponent<MeshRenderer>();
-    }
+    private float grabPincetteTime;
+
+    //MeshRenderer meshRenderer;
+
+    /*    private void Awake()
+        {
+           meshRenderer = GetComponent<MeshRenderer>();
+        }*/
 
     private void Update()
     {
-        /*if (handGrabInteractorR.IsGrabbing)
+        if (handGrabInteractorL.IsGrabbing)
         {
-            if (handGrabInteractorR.CurrentGrabType() == GrabTypeFlags.Palm)
+            if (handGrabInteractorL.CurrentGrabType() == GrabTypeFlags.Pinch)
             {
-                setRed();
-            }
-            else if (handGrabInteractorR.CurrentGrabType() == GrabTypeFlags.Pinch)
-            {
-                setBlack();
-            }
-        }*/
+                grabPincetteTime += Time.deltaTime;
 
-        // Grabbed 상태일 때
-        if (handGrabInteractorR.IsGrabbing)
-        {
-            setBlack();
-            state = State.Grabbed;
+                if (grabPincetteTime > 3.0f)
+                {
+                    GrabbedPincette.SetActive(true);
+                    pincette.SetActive(false);
+                }
+                else
+                {
+                    GrabbedPincette.SetActive(false);
+                }
+            }
+
         }
-        // Released 상태일 때
         else
         {
-            setRed();
-            state = State.Released;
+            grabPincetteTime = 0.0f;
+        }
+
+
+
+
+
+
+
+
+        if (handGrabInteractorL.CurrentGrabType() == GrabTypeFlags.Pinch)
+        {
+            if (handGrabInteractorL.IsGrabbing) 
+            {
+                grabPincetteTime += Time.deltaTime;
+
+                if (grabPincetteTime > 3.0f)
+                {
+                    GrabbedPincette.SetActive(true);
+                    pincette.SetActive(false);
+                }
+            }
+        }
+        else if (handGrabInteractorL.CurrentGrabType() == GrabTypeFlags.Palm)
+        {
+            grabPincetteTime = 0;
+            GrabbedPincette.SetActive(false);
+            pincette.SetActive(true);
         }
 
     }
 
 
-    private void setRed()
-    {
-        meshRenderer.material.color = Color.red;
-    }
-
-    private void setBlack()
-    {
-        meshRenderer.material.color = Color.black;
-    }
-
-    private void setGreen()
-    {
-        meshRenderer.material.color = Color.green;
-    }
 }
+
+            // Grabbed 상태일 때
+            /*if (handGrabInteractorL.IsGrabbing)
+            {
+                state = State.Grabbed;
+            }
+            // Released 상태일 때
+            else
+            {
+                state = State.Released;
+            }*/
