@@ -23,6 +23,9 @@ namespace Meta.WitAi.Dictation
 
         private StringBuilder _separator;
 
+        // Ãß°¡
+        public ChatGPT gpt;
+
         private void Awake()
         {
             if (!witDictation) witDictation = FindObjectOfType<DictationService>();
@@ -111,6 +114,7 @@ namespace Meta.WitAi.Dictation
         public void getText()
         {
             Debug.Log(_text.ToString());
+            gpt.getText(_text.ToString());
         }
     }
 }
