@@ -5,12 +5,12 @@ using UnityEngine;
 public class CuttingFrog : MonoBehaviour
 {
     public Transform frogPosition;
-    private GameObject CuttingLine1;
-    private GameObject CuttingLine2;
-    private GameObject CuttingLine3;
-    private GameObject CuttingLine4;
-    private GameObject CuttingLine5;
-    private GameObject CuttingLine6;
+    public GameObject CuttingLine1;
+    public GameObject CuttingLine2;
+    public GameObject CuttingLine3;
+    public GameObject CuttingLine4;
+    public GameObject CuttingLine5;
+    public GameObject CuttingLine6;
     public GameObject Knife;
     public GameObject BeforeFrog;
     public GameObject AfterFrog;
@@ -19,12 +19,7 @@ public class CuttingFrog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CuttingLine1 = BeforeFrog.transform.Find("CuttingLine1").gameObject;
-        CuttingLine2 = BeforeFrog.transform.Find("CuttingLine2").gameObject;
-        CuttingLine3 = BeforeFrog.transform.Find("CuttingLine3").gameObject;
-        CuttingLine4 = BeforeFrog.transform.Find("CuttingLine4").gameObject;
-        CuttingLine5 = BeforeFrog.transform.Find("CuttingLine5").gameObject;
-        CuttingLine6 = BeforeFrog.transform.Find("CuttingLine6").gameObject;
+
     }
 
     // Update is called once per frame
@@ -114,6 +109,13 @@ public class CuttingFrog : MonoBehaviour
     private void Cut()
     {
         Destroy(BeforeFrog);
+        Destroy(CuttingLine1);
+        Destroy(CuttingLine2);
+        Destroy(CuttingLine3);
+        Destroy(CuttingLine4);
+        Destroy(CuttingLine5);
+        Destroy(CuttingLine6);
+
         Instantiate(AfterFrog, frogPosition.position, frogPosition.rotation);
     }
 }
