@@ -19,7 +19,7 @@ public class OpenAIController : MonoBehaviour
 
     void Start()
     {
-        api = new OpenAIAPI("sk-proj-vgJNBKxDEaH1Vyr9UJ4ST3BlbkFJ9cnvkFVIlDn15x8pUZKy");
+        api = new OpenAIAPI("API Key");
         StartConversation();
         okBtn.onClick.AddListener(() => GetResponse());
     }
