@@ -16,6 +16,9 @@ public class CuttingFrog : MonoBehaviour
     public GameObject AfterFrog;
     private int count = 1;
 
+    Color newcolor = Color.clear;
+    Color redcolor = Color.red;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,43 +36,37 @@ public class CuttingFrog : MonoBehaviour
         Color newcolor = Color.red;
         if (collision.gameObject.CompareTag("Line1"))
         {
-            var LineRenderer1 = CuttingLine1.GetComponent<Renderer>();
-            LineRenderer1.material.SetColor("_BaseColor", newcolor);
+            CuttingLine1.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 2;
         }
         if (collision.gameObject.CompareTag("Line2"))
         {
-            var LineRenderer2 = CuttingLine2.GetComponent<Renderer>();
-            LineRenderer2.material.SetColor("_BaseColor", newcolor);
+            CuttingLine2.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 3;
         }
         if (collision.gameObject.CompareTag("Line3"))
         {
-            var LineRenderer3 = CuttingLine3.GetComponent<Renderer>();
-            LineRenderer3.material.SetColor("_BaseColor", newcolor);
+            CuttingLine3.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 4;
         }
         if (collision.gameObject.CompareTag("Line4"))
         {
-            var LineRenderer4 = CuttingLine4.GetComponent<Renderer>();
-            LineRenderer4.material.SetColor("_BaseColor", newcolor);
+            CuttingLine4.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 5;
         }
         if (collision.gameObject.CompareTag("Line5"))
         {
-            var LineRenderer5 = CuttingLine5.GetComponent<Renderer>();
-            LineRenderer5.material.SetColor("_BaseColor", newcolor);
+            CuttingLine5.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 6;
         }
         if (collision.gameObject.CompareTag("Line6"))
         {
-            var LineRenderer6 = CuttingLine6.GetComponent<Renderer>();
-            LineRenderer6.material.SetColor("_BaseColor", newcolor);
+            CuttingLine6.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             AllLineRed();
         }
@@ -84,8 +81,6 @@ public class CuttingFrog : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            Color newcolor = Color.clear;
-            Color redcolor = Color.red;
             // 1초 동안 모든 선이 투명색이 됩니다.
             SetLineColor(newcolor);
             yield return new WaitForSeconds(1f);
@@ -94,7 +89,6 @@ public class CuttingFrog : MonoBehaviour
             SetLineColor(redcolor);
             yield return new WaitForSeconds(1f);
         }
-
         // 모든 선이 빨간색이 된 후 Cut() 함수를 호출합니다.
         Cut();
     }
