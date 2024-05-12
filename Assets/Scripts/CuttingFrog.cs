@@ -67,6 +67,7 @@ public class CuttingFrog : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Line6") && count == 6)
         {
+            count = 0;
             CuttingLine6.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             AllLineRed();
