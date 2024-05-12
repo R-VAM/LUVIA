@@ -14,6 +14,7 @@ public class CuttingFrog : MonoBehaviour
     public GameObject Knife;
     public GameObject BeforeFrog;
     public GameObject AfterFrog;
+    
     private int count = 1;
 
     Color newcolor = Color.clear;
@@ -22,7 +23,7 @@ public class CuttingFrog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -34,37 +35,37 @@ public class CuttingFrog : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         Color newcolor = Color.red;
-        if (collision.gameObject.CompareTag("Line1"))
+        if (collision.gameObject.CompareTag("Line1") && count == 1)
         {
             CuttingLine1.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 2;
         }
-        if (collision.gameObject.CompareTag("Line2"))
+        if (collision.gameObject.CompareTag("Line2") && count == 2)
         {
             CuttingLine2.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 3;
         }
-        if (collision.gameObject.CompareTag("Line3"))
+        if (collision.gameObject.CompareTag("Line3") && count == 3)
         {
             CuttingLine3.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 4;
         }
-        if (collision.gameObject.CompareTag("Line4"))
+        if (collision.gameObject.CompareTag("Line4") && count == 4)
         {
             CuttingLine4.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 5;
         }
-        if (collision.gameObject.CompareTag("Line5"))
+        if (collision.gameObject.CompareTag("Line5") && count == 5)
         {
             CuttingLine5.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
             count = 6;
         }
-        if (collision.gameObject.CompareTag("Line6"))
+        if (collision.gameObject.CompareTag("Line6") && count == 6)
         {
             CuttingLine6.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
@@ -111,6 +112,7 @@ public class CuttingFrog : MonoBehaviour
 
     private void Cut()
     {
+        GameObject[] frogs = GameObject.FindGameObjectsWithTag("BeforeCutFrog");
         /*
         Destroy(BeforeFrog);
         Destroy(CuttingLine1);
@@ -120,7 +122,11 @@ public class CuttingFrog : MonoBehaviour
         Destroy(CuttingLine5);
         Destroy(CuttingLine6);
         */
-        BeforeFrog.SetActive(false);
+        // BeforeFrog.SetActive(false);
+        foreach (GameObject frog in frogs)
+        {
+            Destroy(frog);
+        }
         CuttingLine1.SetActive(false);
         CuttingLine2.SetActive(false);
         CuttingLine3.SetActive(false);

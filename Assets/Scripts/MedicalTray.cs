@@ -31,7 +31,7 @@ public class MedicalTray : MonoBehaviour
             if (collision.gameObject.GetComponent<Animal>().state == Animal.FrogState.Anesthesia)
             {
                 Destroy(collision.gameObject);
-                Instantiate(anesFrog, frogPosition.position, frogPosition.rotation);
+                GameObject frogInstance = Instantiate(anesFrog, frogPosition.position, frogPosition.rotation);
                 L1.SetActive(true);
                 L2.SetActive(true);
                 L3.SetActive(true);
