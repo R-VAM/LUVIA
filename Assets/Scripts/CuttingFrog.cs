@@ -75,6 +75,14 @@ public class CuttingFrog : MonoBehaviour
     private void AllLineRed()
     {
         StartCoroutine(FlashLines());
+        // 모든 선이 빨간색이 된 후 Cut() 함수를 호출합니다.
+        StartCoroutine(DelayedCut()); // 3초 후에 Cut() 함수 실행
+    }
+
+    private IEnumerator DelayedCut()
+    {
+        yield return new WaitForSeconds(6f); // 3초 대기
+        Cut(); // Cut() 함수 실행
     }
 
     private IEnumerator FlashLines()
@@ -89,8 +97,6 @@ public class CuttingFrog : MonoBehaviour
             SetLineColor(redcolor);
             yield return new WaitForSeconds(1f);
         }
-        // 모든 선이 빨간색이 된 후 Cut() 함수를 호출합니다.
-        Cut();
     }
 
     private void SetLineColor(Color color)
