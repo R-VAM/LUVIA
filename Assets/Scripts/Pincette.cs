@@ -87,6 +87,12 @@ public class Pincette : MonoBehaviour
 
     }
 
+    public void freePincette()
+    {
+        //transform.position = new Vector3(-0.3f, 1.34f, 1.5f);
+        GrabbedPincette.SetActive(false);
+        pincette.SetActive(true);
+    }
 
 }
 
