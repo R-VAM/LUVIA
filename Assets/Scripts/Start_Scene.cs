@@ -21,7 +21,7 @@ public class Start_Scene : MonoBehaviour {
     private void OnTriggerEnter(Collider collision)
     {
         //canvasToDisable.gameObject.SetActive(false);
-        SceneManager.LoadScene("Scene_Laboratory");
+        SceneManager.LoadScene("LabScene");
     }
 
 }
