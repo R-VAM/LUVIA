@@ -1451,7 +1451,7 @@ MonoBehaviour:
   Knife: {fileID: 284191769}
   AfterFrog: {fileID: 690070758076638224, guid: 963d35aae4cd6ce4eb2047ee8a6a4625, type: 3}
   imageObject: {fileID: 1610721704}
-  imageObject2: {fileID: 0}
+  imageObject2: {fileID: 1410712379}
 --- !u!65 &83048779
 BoxCollider:
   m_ObjectHideFlags: 0
