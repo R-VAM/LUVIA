@@ -20,6 +20,8 @@ public class CuttingFrog : MonoBehaviour
     Color newcolor = Color.clear;
     Color redcolor = Color.red;
 
+    public GameObject imageObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -135,5 +137,7 @@ public class CuttingFrog : MonoBehaviour
         CuttingLine5.SetActive(false);
         CuttingLine6.SetActive(false);
         Instantiate(AfterFrog, frogPosition.position, frogPosition.rotation);
+        imageObject.SetActive(true);
+
     }
 }

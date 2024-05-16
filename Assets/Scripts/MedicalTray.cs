@@ -14,6 +14,7 @@ public class MedicalTray : MonoBehaviour
     public GameObject L5;
     public GameObject L6;
 
+    public GameObject imageObject;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class MedicalTray : MonoBehaviour
             {
                 Destroy(collision.gameObject);
                 GameObject frogInstance = Instantiate(anesFrog, frogPosition.position, frogPosition.rotation);
+                imageObject.SetActive(true);
                 L1.SetActive(true);
                 L2.SetActive(true);
                 L3.SetActive(true);

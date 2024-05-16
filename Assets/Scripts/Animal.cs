@@ -30,6 +30,9 @@ public class Animal : OneGrabFreeTransformer, ITransformer
     public bool isGrabbed;  // 개구리가 손에 잡힌 상태인지
     public bool isAnesed;   // 개구리가 마취된 상태인지
 
+    public GameObject imageObject;
+
+
     public new void Initialize(IGrabbable grabbable)
     {
         base.Initialize(grabbable);
@@ -41,6 +44,8 @@ public class Animal : OneGrabFreeTransformer, ITransformer
     {
         isGrabbed = true;
         state = FrogState.Grabbed;
+
+        imageObject.SetActive(true);
 
         base.BeginTransform();
         onobjectGrabbed?.Invoke(gameObject);
