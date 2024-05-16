@@ -21,6 +21,8 @@ public class CuttingFrog : MonoBehaviour
     Color redcolor = Color.red;
 
     public GameObject imageObject;
+    public GameObject imageObject2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +74,7 @@ public class CuttingFrog : MonoBehaviour
             count = 0;
             CuttingLine6.GetComponent<Renderer>().material.SetColor("_Color", redcolor);
             Debug.Log(count);
+            imageObject2.SetActive(true);
             AllLineRed();
         }
     }
