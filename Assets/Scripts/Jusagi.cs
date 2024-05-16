@@ -18,6 +18,8 @@ public class Jusagi : OneGrabFreeTransformer, ITransformer
     public bool isGrabbed;
     public float collisionDuration;
 
+    public GameObject imageObject;
+
     void Start()
     {
         
@@ -104,6 +106,7 @@ public class Jusagi : OneGrabFreeTransformer, ITransformer
             {
                 Animal cshAnimal = collision.gameObject.GetComponent<Animal>();
                 cshAnimal.doAnes();
+                imageObject.SetActive(true);
             }
         }
     }
