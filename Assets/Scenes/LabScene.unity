@@ -11737,6 +11737,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 205742019099526059, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 205742019099526059, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.46023485
+      objectReference: {fileID: 0}
+    - target: {fileID: 205742019099526059, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.42452824
+      objectReference: {fileID: 0}
+    - target: {fileID: 536052765731568548, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 536052765731568548, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 536052765731568548, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 536052765731568548, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 536052765731568548, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.46023485
+      objectReference: {fileID: 0}
+    - target: {fileID: 536052765731568548, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.42452824
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006257463872357349, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006257463872357349, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.46023485
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006257463872357349, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.42452824
+      objectReference: {fileID: 0}
     - target: {fileID: 2565645883107811851, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -11769,6 +11817,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4439388334846852526, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.5999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439388334846852526, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.46023485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439388334846852526, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.42452824
+      objectReference: {fileID: 0}
     - target: {fileID: 4884762606505034843, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
       propertyPath: m_Name
       value: PointableCanvasGPT
@@ -11776,6 +11836,22 @@ PrefabInstance:
     - target: {fileID: 4884762606505034843, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217528978328799456, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217528978328799456, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217528978328799456, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 5217528978328799456, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 145
       objectReference: {fileID: 0}
     - target: {fileID: 5338558861295859545, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11796,6 +11872,22 @@ PrefabInstance:
     - target: {fileID: 7179960714287117458, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7452740186734210624, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: dictationEvents._onComplete.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Press the activate button and begin speaking.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488162297110118586, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_text
+      value: Your Conversation Will Appear Here
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488162297110118586, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488162297110118586, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8286684508409067207, guid: eefada762eff503429926efb3cf2b9e3, type: 3}
       propertyPath: _size.x
