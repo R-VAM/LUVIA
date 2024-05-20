@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Johnny_TestScene.unity
     guid: 58d62a58712e28047a1127d84ca474ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/StartScene.unity
     guid: dfaf2526eb65f444ab630ebb8556f356
   - enabled: 1
