@@ -4967,7 +4967,7 @@ MonoBehaviour:
       Value: 0.1
     MaxScale:
       Constrain: 1
-      Value: 2
+      Value: 3
 --- !u!114 &1243496915
 MonoBehaviour:
   m_ObjectHideFlags: 0

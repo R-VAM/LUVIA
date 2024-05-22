@@ -194,6 +194,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205000774919044778}
     m_Modifications:
+    - target: {fileID: 423507720775809430, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MaxScale.Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 423507720775809430, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MinScale.Value
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 915187913447429015, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0031126635
@@ -234,9 +242,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1605379705036311352, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MaxScale.Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1605379705036311352, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MinScale.Value
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190323669883538029, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MaxScale.Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190323669883538029, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MinScale.Value
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831931422541134009, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MaxScale.Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831931422541134009, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MinScale.Value
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4817034021192195730, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
       propertyPath: m_Name
       value: Haslet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165653064625369331, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MaxScale.Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165653064625369331, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MinScale.Value
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956791205032702910, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MaxScale.Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956791205032702910, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MinScale.Value
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107829365550379055, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MaxScale.Value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107829365550379055, guid: 470bbbc543e276e429f7199e5ea0d94d, type: 3}
+      propertyPath: _constraints.MinScale.Value
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
