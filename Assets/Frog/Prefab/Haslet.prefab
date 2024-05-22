@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 237298065004046394}
   - component: {fileID: 301989995520201175}
   - component: {fileID: 8304869609318760413}
+  - component: {fileID: 7621607243444210755}
   - component: {fileID: 2085594196167316671}
   - component: {fileID: 7856831642797787115}
-  - component: {fileID: 7621607243444210755}
+  - component: {fileID: 7322948116889766578}
+  - component: {fileID: 7956791205032702910}
   m_Layer: 0
   m_Name: bladder
   m_TagString: Organ
@@ -114,6 +116,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7621607243444210755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108818604299085609}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.09042411, y: 0.052854594, z: 0.05145484}
+  m_Center: {x: -0.00000006146729, y: 0.00000047683716, z: 0}
 --- !u!114 &2085594196167316671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,8 +152,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 7322948116889766578}
+  _twoGrabTransformer: {fileID: 7956791205032702910}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
 --- !u!114 &7856831642797787115
@@ -174,27 +197,38 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
---- !u!65 &7621607243444210755
-BoxCollider:
+--- !u!114 &7322948116889766578
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108818604299085609}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.09042411, y: 0.052854594, z: 0.05145484}
-  m_Center: {x: -0.00000006146729, y: 0.00000047683716, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7956791205032702910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108818604299085609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 1
+      Value: 0.1
+    MaxScale:
+      Constrain: 1
+      Value: 3
 --- !u!1 &313604368100790533
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +354,8 @@ GameObject:
   - component: {fileID: 4301818569412437128}
   - component: {fileID: 3839411654783539479}
   - component: {fileID: 2442785965483865468}
+  - component: {fileID: 372502089949827762}
+  - component: {fileID: 1605379705036311352}
   m_Layer: 0
   m_Name: lung
   m_TagString: Organ
@@ -428,8 +464,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 372502089949827762}
+  _twoGrabTransformer: {fileID: 1605379705036311352}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
 --- !u!114 &2442785965483865468
@@ -473,6 +509,38 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &372502089949827762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335783489256113707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1605379705036311352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335783489256113707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 1
+      Value: 0.1
+    MaxScale:
+      Constrain: 1
+      Value: 3
 --- !u!1 &406462658580858180
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,9 +775,11 @@ GameObject:
   - component: {fileID: 8744961674703806379}
   - component: {fileID: 39674341391261416}
   - component: {fileID: 763435083991900668}
+  - component: {fileID: 6274404802017791092}
   - component: {fileID: 2905330661818188878}
   - component: {fileID: 5532938208755715608}
-  - component: {fileID: 6274404802017791092}
+  - component: {fileID: 6773284242840021643}
+  - component: {fileID: 9107829365550379055}
   m_Layer: 0
   m_Name: intestine
   m_TagString: Organ
@@ -809,6 +879,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6274404802017791092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823283579202414177}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.40053135, y: 1.1609111, z: 0.17218177}
+  m_Center: {x: 0.000000059604645, y: 0.0000009536743, z: -0.000000022351745}
 --- !u!114 &2905330661818188878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,8 +915,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 6773284242840021643}
+  _twoGrabTransformer: {fileID: 9107829365550379055}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
 --- !u!114 &5532938208755715608
@@ -869,27 +960,38 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
---- !u!65 &6274404802017791092
-BoxCollider:
+--- !u!114 &6773284242840021643
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823283579202414177}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.40053135, y: 1.1609111, z: 0.17218177}
-  m_Center: {x: 0.000000059604645, y: 0.0000009536743, z: -0.000000022351745}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9107829365550379055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823283579202414177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 1
+      Value: 0.1
+    MaxScale:
+      Constrain: 1
+      Value: 3
 --- !u!1 &2360354196659397943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,6 +1421,8 @@ GameObject:
   - component: {fileID: 7742106847960364062}
   - component: {fileID: 433918445551207452}
   - component: {fileID: 4907796713281627497}
+  - component: {fileID: 8875895059074421726}
+  - component: {fileID: 2831931422541134009}
   m_Layer: 0
   m_Name: liver
   m_TagString: Organ
@@ -1407,8 +1511,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 8875895059074421726}
+  _twoGrabTransformer: {fileID: 2831931422541134009}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
 --- !u!114 &4907796713281627497
@@ -1452,6 +1556,38 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &8875895059074421726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3357198992721074955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2831931422541134009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3357198992721074955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 1
+      Value: 0.1
+    MaxScale:
+      Constrain: 1
+      Value: 3
 --- !u!1 &3507122098624464746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,6 +1845,8 @@ GameObject:
   - component: {fileID: 4232182028661199301}
   - component: {fileID: 4549665898561032026}
   - component: {fileID: 7109163785178037703}
+  - component: {fileID: 2695550999912576153}
+  - component: {fileID: 423507720775809430}
   m_Layer: 0
   m_Name: kidneys
   m_TagString: Organ
@@ -1796,8 +1934,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 2695550999912576153}
+  _twoGrabTransformer: {fileID: 423507720775809430}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
 --- !u!114 &7109163785178037703
@@ -1841,6 +1979,38 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &2695550999912576153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125806036235763794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &423507720775809430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125806036235763794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 1
+      Value: 0.1
+    MaxScale:
+      Constrain: 1
+      Value: 3
 --- !u!1 &4332647060910380232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,9 +2798,11 @@ GameObject:
   - component: {fileID: 7272399906466548394}
   - component: {fileID: 6730528515272088767}
   - component: {fileID: 6366466663330765751}
+  - component: {fileID: 9190296245385127911}
   - component: {fileID: 6833884035076026175}
   - component: {fileID: 244701200822191690}
-  - component: {fileID: 9190296245385127911}
+  - component: {fileID: 7969547394167330725}
+  - component: {fileID: 2190323669883538029}
   m_Layer: 0
   m_Name: Sclera
   m_TagString: Organ
@@ -2730,6 +2902,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &9190296245385127911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5595421601143567155}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.32716286, y: 0.22551778, z: 0.18183015}
+  m_Center: {x: 0, y: 0.00000004842878, z: -0.000000011175873}
 --- !u!114 &6833884035076026175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2745,8 +2938,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 7969547394167330725}
+  _twoGrabTransformer: {fileID: 2190323669883538029}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
 --- !u!114 &244701200822191690
@@ -2790,27 +2983,38 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
---- !u!65 &9190296245385127911
-BoxCollider:
+--- !u!114 &7969547394167330725
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5595421601143567155}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.32716286, y: 0.22551778, z: 0.18183015}
-  m_Center: {x: 0, y: 0.00000004842878, z: -0.000000011175873}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2190323669883538029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5595421601143567155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 1
+      Value: 0.1
+    MaxScale:
+      Constrain: 1
+      Value: 3
 --- !u!1 &5877620109551572101
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,9 +3221,11 @@ GameObject:
   - component: {fileID: 188320629621209769}
   - component: {fileID: 6638983150650982518}
   - component: {fileID: 564672365802239008}
+  - component: {fileID: 8023715245042130859}
   - component: {fileID: 5680396273933836850}
   - component: {fileID: 2040829860589855340}
-  - component: {fileID: 8023715245042130859}
+  - component: {fileID: 228253982700630030}
+  - component: {fileID: 7165653064625369331}
   m_Layer: 0
   m_Name: heart
   m_TagString: Organ
@@ -3119,6 +3325,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &8023715245042130859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163539772222868037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12458889, y: 0.23681778, z: 0.14524142}
+  m_Center: {x: 0, y: 0.0000009536743, z: -0.000000022351745}
 --- !u!114 &5680396273933836850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3134,8 +3361,8 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 228253982700630030}
+  _twoGrabTransformer: {fileID: 7165653064625369331}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
 --- !u!114 &2040829860589855340
@@ -3179,27 +3406,38 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
---- !u!65 &8023715245042130859
-BoxCollider:
+--- !u!114 &228253982700630030
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6163539772222868037}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.12458889, y: 0.23681778, z: 0.14524142}
-  m_Center: {x: 0, y: 0.0000009536743, z: -0.000000022351745}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7165653064625369331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163539772222868037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b053556d972eae24b947c1477538bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _constraints:
+    ConstraintsAreRelative: 0
+    MinScale:
+      Constrain: 1
+      Value: 0.1
+    MaxScale:
+      Constrain: 1
+      Value: 3
 --- !u!1 &6490730310226235635
 GameObject:
   m_ObjectHideFlags: 0
