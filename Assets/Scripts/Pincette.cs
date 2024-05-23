@@ -24,74 +24,59 @@ public class Pincette : MonoBehaviour
     public GameObject pincette;
     public GameObject GrabbedPincette;
 
+    public Transform pincettePos;
+    public Transform HeightStandard;
+
+    bool pincetteGrabbing = false;
+
     private float grabPincetteTime;
-
-    //MeshRenderer meshRenderer;
-
-    /*    private void Awake()
-        {
-           meshRenderer = GetComponent<MeshRenderer>();
-        }*/
 
     private void Update()
     {
-        if (handGrabInteractorL.IsGrabbing)
+        if (pincette.transform.position.y > HeightStandard.transform.position.y) 
         {
-            if (handGrabInteractorL.CurrentGrabType() == GrabTypeFlags.Pinch)
+            if (handGrabInteractorL.CurrentGrabType() == GrabTypeFlags.Pinch) 
             {
-                grabPincetteTime += Time.deltaTime;
+                if (handGrabInteractorL.IsGrabbing)
+                {
+                    grabPincetteTime += Time.deltaTime;
 
-                if (grabPincetteTime > 3.0f)
-                {
-                    GrabbedPincette.SetActive(true);
-                    pincette.SetActive(false);
-                }
-                else
-                {
-                    GrabbedPincette.SetActive(false);
+                    if (grabPincetteTime > 2.0f)
+                    {
+                        pincetteGrabbing = true;
+                        GrabbedPincette.SetActive(true);
+                        pincette.SetActive(false);
+                    }
                 }
             }
-
-        }
-        else
-        {
-            grabPincetteTime = 0.0f;
-        }
-
-
-
-
-
-
-
-
-        if (handGrabInteractorL.CurrentGrabType() == GrabTypeFlags.Pinch)
-        {
-            if (handGrabInteractorL.IsGrabbing) 
+            else if (handGrabInteractorL.CurrentGrabType() == GrabTypeFlags.Palm)
             {
-                grabPincetteTime += Time.deltaTime;
-
-                if (grabPincetteTime > 3.0f)
-                {
-                    GrabbedPincette.SetActive(true);
-                    pincette.SetActive(false);
-                }
+                grabPincetteTime = 0;
+                pincetteGrabbing = false;
+                GrabbedPincette.SetActive(false);
+                pincette.SetActive(true);
+            }
+            else
+            {
+                grabPincetteTime = 0;
+                pincetteGrabbing = false;
+                GrabbedPincette.SetActive(false);
+                pincette.SetActive(true);
             }
         }
-        else if (handGrabInteractorL.CurrentGrabType() == GrabTypeFlags.Palm)
-        {
-            grabPincetteTime = 0;
-            GrabbedPincette.SetActive(false);
-            pincette.SetActive(true);
-        }
+
 
     }
 
     public void freePincette()
     {
-        //transform.position = new Vector3(-0.3f, 1.34f, 1.5f);
-        GrabbedPincette.SetActive(false);
-        pincette.SetActive(true);
+        if(pincetteGrabbing == true)
+        {
+            //transform.position = new Vector3(-0.3f, 1.34f, 1.5f);
+            GrabbedPincette.SetActive(false);
+            pincette.SetActive(true);
+        }
+
     }
 
 }
