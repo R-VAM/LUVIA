@@ -10,25 +10,18 @@ public class PlayBtn : MonoBehaviour
     public TextMeshProUGUI btnText;
     public VideoPlayer video;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     public void btnClick()
     {
-        if (video.isPlaying)
+        if(video.isPlaying)
         {
             video.Pause();
+            btnText.text = "Play";
         }
         else
         {
             video.Play();
+            btnText.text = "Pause";
         }
     }
 }
