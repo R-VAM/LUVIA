@@ -12,7 +12,7 @@
 <br>
 <br>
 
-⬇️참고 영상⬇️
+⬇️참고 영상⬇️ <br>
 [<img width="500" height="300" alt="luvia 썸네일" src="https://github.com/user-attachments/assets/434f011f-b980-404d-b825-c93893966b13" />](https://youtu.be/eWNGqGHGZmM)
 
 <br>
