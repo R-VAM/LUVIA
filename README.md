@@ -6,7 +6,7 @@
 
 
 <img src="https://github.com/R-VAM/LUVIA/assets/56534003/6674099a-bc19-43af-9b28-8292d599098f" width="300" height="500"/>
-<img src="https://github.com/user-attachments/assets/34c4c684-1409-4ba5-b8c5-4f480b1b34af" width="300" height="500"/><br><br>
+<img src="https://github.com/user-attachments/assets/34c4c684-1409-4ba5-b8c5-4f480b1b34af" width="400" height="600"/><br><br>
 
 
 <br>
