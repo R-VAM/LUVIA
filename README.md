@@ -1,9 +1,22 @@
+# LUVIA 
+- VR을 활용한 개구리 해부 학습 진행 도구
+- 2024 캡스톤 디자인 제작 프로그
+<br>
+<br>
+
+
 ![image](https://github.com/R-VAM/LUVIA/assets/56534003/6674099a-bc19-43af-9b28-8292d599098f)
 ![논문 수상](https://github.com/user-attachments/assets/34c4c684-1409-4ba5-b8c5-4f480b1b34af)
 
 
+<br>
+<br>
 
-# LUVIA 
+[설명 영상](https://youtu.be/eWNGqGHGZmM)
+
+<br>
+<br>
+
 ※ 이 프로젝트는 생명에 대한 존중을 바탕으로 제작되었습니다. 가상 현실의 실험 과정에서 개구리를 소중하게 다뤄주세요.
 
  - 동물 보호법 제 24조의 2(미성년자 동물 해부실습의 금지)로 인해 2020년 3월 21일부터 개구리 해부 실험을 진행하지 못하게 되어 제작하였습니다.
