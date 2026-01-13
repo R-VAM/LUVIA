@@ -5,15 +5,15 @@
 <br>
 
 
-![image](https://github.com/R-VAM/LUVIA/assets/56534003/6674099a-bc19-43af-9b28-8292d599098f)
-![논문 수상](https://github.com/user-attachments/assets/34c4c684-1409-4ba5-b8c5-4f480b1b34af)
+![image](https://github.com/R-VAM/LUVIA/assets/56534003/6674099a-bc19-43af-9b28-8292d599098f)<br><br>
+![논문 수상](https://github.com/user-attachments/assets/34c4c684-1409-4ba5-b8c5-4f480b1b34af)<br><br>
 
 
 <br>
 <br>
 
-
-[<img width="1198" height="675" alt="luvia 썸네일" src="https://github.com/user-attachments/assets/434f011f-b980-404d-b825-c93893966b13" />](https://youtu.be/eWNGqGHGZmM)
+⬇️참고 영상⬇️
+[<img width="500" height="300" alt="luvia 썸네일" src="https://github.com/user-attachments/assets/434f011f-b980-404d-b825-c93893966b13" />](https://youtu.be/eWNGqGHGZmM)
 
 <br>
 <br>
