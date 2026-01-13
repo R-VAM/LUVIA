@@ -1,6 +1,6 @@
 # LUVIA 
 - VR을 활용한 개구리 해부 학습 진행 도구
-- 2024 캡스톤 디자인 제작 프로그
+- 2024 캡스톤 디자인 제작 프로그램
 <br>
 <br>
 
@@ -12,7 +12,8 @@
 <br>
 <br>
 
-[설명 영상](https://youtu.be/eWNGqGHGZmM)
+
+[<img width="1198" height="675" alt="luvia 썸네일" src="https://github.com/user-attachments/assets/434f011f-b980-404d-b825-c93893966b13" />](https://youtu.be/eWNGqGHGZmM)
 
 <br>
 <br>
